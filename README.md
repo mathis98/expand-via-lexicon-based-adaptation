@@ -1,6 +1,10 @@
-# Expanding Pretrained Models to Thousands More Languages via Lexicon-based Adaptation 
+# Expanding Pretrained Models to Thousands More Languages via Lexicon-based Adaptation
 
 # Intro
+
+This is a fork of the repository cindyxinyiwang/expand-via-lexicon-based-adaptation. It is used for experimentation in KAIST CS475 class group 8.
+The following README is by the original authors.
+
 This repository contains the code for our [(ACL 2022 paper)](https://arxiv.org/abs/2203.09435) that synthesizes monolingual and labeled data for languages with limited or not textural data. We use these synthetic data to adapt pretrained multilingual models to languages with constraint textural data, which leads to significant improvements for these languages.  
 
 # Download prepared data
@@ -18,7 +22,7 @@ python src/make_pseudo_mono.py $LAN
 ```
 where $LAN is a language code with a corresponding lexicon file under the folder data/lexicons/
 
- 
+
 # Pseudo labeled data
 For finetuning, please first download and prepare the task specific data following the [XTREME repo]()
 To generate synthetic data for a language and a task, use
@@ -40,4 +44,3 @@ Please cite our paper as:
     year={2022}
 }
 ```
-
